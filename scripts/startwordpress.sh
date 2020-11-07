@@ -4,7 +4,10 @@ if [ "$(ls -A /var/www/html/wp-admin)" ]; then
     echo "html files already installed"
 else
     echo "restoring html files"
+    ls -la /var/www/html
     tar -xf /var/backups/html.tar.gz -C /var/www/html
+    chown www-data:www-data /var/www/html
+    ls -la /var/www/html
 fi
 #if [ "$(ls -A /var/www/data)" ]; then
 #    echo "data files already installed"
