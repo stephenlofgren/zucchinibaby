@@ -1,0 +1,9 @@
+.git
+README.md
+LICENSE
+.vscode
+*.env
+*.pem
+*.tar.gz
+*.sql
+.dockerignore
